@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1(menu='todo')}">
+<th:block layout:fragment="script">
+    <script>
+       function del_func(id){
+           var params = {
+
+               name      : '1234',
+               content : 'content'
+
+           }
+       $.ajax({
+           type : "delete",
+           url : "/todo/delete",
+           data : params,
+           success : function(res,txt){
+               $('#cont').append("<p>"+res.code+"</p>");
+               alert(res.code);
+               // alert(res)
+               // alert(txt)
+               if(res.code =='ok'){
+                   location.href='selectall'
+               }
+
+           },
+           error : function(request, textStatus, err){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
+               alert("통신 실패."+request)
+               alert("통신 실패."+textStatus)
+               alert("통신 실패."+err)
+           }
+       });
+       }
+    </script>
+
+
+
+
+</th:block>
+
+    <th:block layout:fragment="css">
+        <style>
+            *{
+                font-size: 1.5rem;
+            }
+        </style>
+
+    </th:block>
+<div layout:fragment="content" class="container" id="cont">
+    <h1>todo all</h1>
+<div class="d-flex justify-content-end">
+<!--    <button id="btn" type="button" class="btn btn-primary">추가</button>-->
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+       추가
+    </button>
+
+</div>
+
+
+<div th:each="obj:${list}">
+<div>
+     <span >순번</span><span th:text="${obj.id}">ID</span>
+</div>
+
+    <div th:text="${obj.content}" class="p-2" style="background-color: gray; float: left;">
+        중간
+    </div>
+
+    <div style="float: right; margin-right: 10px; margin-top: 10px;">
+        <button th:onclick="|del_func(${obj.id})|" id="del" type="button" class="btn btn-danger btn-sm">삭제</button>
+    </div>
+
+
+    <div style="display: flex; align-items: flex-end; justify-content: flex-end; ">
+   <span style="margin-right: 1rem">날짜</span>
+        <span th:text="${#temporals.format(obj.wdate, 'yyyy-MM-dd')}">날짜</span>
+<!--        <span th:text="${obj.wdate}">날짜</span>-->
+    </div>
+
+</div>
+
+
+    <!-- The Modal -->
+
+    <div class="modal" id="myModal">
+        <form th:action="@{/todo/insert}" method="post">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">할일 추가</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+
+
+                                  <textarea name="content" class="form-control"></textarea>
+
+
+
+
+                </div>
+
+                <!-- Modal footer -->
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Commit</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+        </form>
+    </div>
+
+</div>
+
+
+
+
+
+</html>

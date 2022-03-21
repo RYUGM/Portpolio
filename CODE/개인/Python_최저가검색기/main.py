@@ -31,16 +31,7 @@ class MainWindow(QMainWindow,form_class):
         self.setupUi(self)
         self.create_btn.clicked.connect(self.CreateEmail_xl)
         self.recive_btn.clicked.connect(self.recive_mail)
-        # self.web_btn.clicked.connect(self.web_scraping)
-        # self.send_btn.clicked.connect(self.send_mail)
         self.exit_btn.clicked.connect(QCoreApplication.instance().quit)
-        # self.clear_btn.clicked.connect(self.clear_list)
-        # schedule.every(1).minutes.do(self.recive_mail)
-
-
-
-
-
 
 
     def CreateEmail_xl(self):
@@ -142,14 +133,13 @@ class MainWindow(QMainWindow,form_class):
 
         now = datetime.datetime.now()
         print("현재시간 ",now)
-        threading.Timer(120, self.recive_mail).start()
+        threading.Timer(1, self.recive_mail).start()
 
 
 
 
 
-
-    def recive_mail(self):#류경문 - 이메일 받기
+    def recive_mail(self):#이메일 받기
 
         wb=load_workbook("Phase1.xlsx")
         ws=wb.active
@@ -336,6 +326,8 @@ class MainWindow(QMainWindow,form_class):
 if __name__ == "__main__":
     app=QApplication(sys.argv)
 
+
     myWindow = MainWindow()
     myWindow.show()
     app.exec_()
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1(menu='board')}">
+<title layout:fragment="title">board</title>
+<th:block layout:fragment="script">
+    <script>
+        $('docuemnt').ready(function(){
+        });
+    </script>
+</th:block>
+<th:block layout:fragment="css">
+    <style>
+        *{
+            font-size:1.5rem;
+        }
+    </style>
+</th:block>
+<div layout:fragment="content" class="container">
+    <h1>selectall.html</h1>
+    <h1>글목록</h1>
+    <a class="btn btn-primary" href="/board/insert">글작성</a>
+    <div class="mt-2"></div>
+    <div>
+        <table class="table">
+            <tr>
+                <th>글번호</th>
+                <th>글제목</th>
+                <th>작성자</th>
+            </tr>
+            <tr th:each="board:${list}">
+                <th th:text="${board.id}">글번호</th>
+                <th ><a th:text="${board.title}" th:href="@{/board/view(id=${board.id})}">title</a></th>
+                <th th:text="${board.name}">작성자</th>
+            </tr>
+        </table>
+    </div>
+</div>
+</html>
