@@ -11,10 +11,7 @@ namespace Project_payment
     public class DataManaber_form2
 
     {
-        //const string ORADB = "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
-        //       "(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
-        //       "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)));" +
-        //       "User Id=;Password=;";
+        
         const string ORADB = "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
               "(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
               "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)));" +
