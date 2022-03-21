@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: hsla(123, 100%, 41%, 0.753);
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: hsla(123, 100%, 41%, 0.753);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: rgb(0, 0, 0) !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  iframe{
+     width: 100%;
+        max-width: 100%;
+       height: 100%;
+
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    .portpolio:hover{
+         background-color: white;
+         opacity: 0.5;
+         cursor: pointer;
+    }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://newruh.cafe24.com/HTML/Portfolio.html" style="color: goldenrod;">My Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="http://newruh.cafe24.com/">Home</a></li>
+        <li><a href="https://github.com/RYUGM?tab=repositories">My GitHub</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">My HomePages
+              <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="https://ryugm.github.io/RYUGM/">First HomePage</a></li>
+              <li><a href="http://newruh.cafe24.com/HTML/Second_web.html">Second HomePage</a></li>
+            
+
+          </ul>
+      </li>
+      
+        
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center">
+  <h1>PORTPOLIO</h1> 
+  <h3>류경문</h3> 
+  
+</div>
+
+<!-- Container (About Section) -->
+<!-- 
+    자신이 한 부분을 어필하자!
+설명이 없으면 안된다.
+자랑만 하는 것은 의미가 없다.
+팀 프로젝트를 조심하라.
+이런 프로젝트를 했다. 끝.
+자기가 얼마나 했는지가 안나와 있다.
+자신이 한 부분을 어필해야한다.
+해당 프로젝트의!! github 주소를 적어야 한다.
+https://gmlwjd9405.github.io/2018/05/04/how-to-write-a-resume-for-a-developer.html
+    
+    자신의 기술 스펙 요약
+이력서 공간에 쓰지 못했던 자세한 기술 요약
+c++ 언어는 학교에서 얼마나 공부했고
+개인적인 프로젝트는 얼마나 했고
+팀 프로젝트는 얼마나 했고
+STL과 network programming은 어느 정도 했고
+Boost 라이브러리는 얼마나 보고 있고
+개발 관련 알바/외주는 어떤 것을 해봤다.
+등등을 굵기 조절해서 요약하자!
+https://gmlwjd9405.github.io/2018/05/04/how-to-write-a-resume-for-a-developer.html -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2></h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <img src="https://github.com/RYUGM/RYU/blob/main/Portfolio/1946429.png?raw=true">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://github.com/RYUGM/RYU/blob/main/Portfolio/2021%EC%86%A1%EC%95%94%EC%A0%84_%EA%BF%80%EB%94%9C%EB%9F%AC_1.jpg?raw=true">
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>팀 프로젝트</h2>
+  
+  <br>
+  <div class="row slideanim">
+
+    
+
+    <div class="col-sm-4">
+      <div class="portpolio" onclick="location='http://newruh.cafe24.com/board/board_view.jsp?idx=8'">
+      <img src="https://github.com/RYUGM/RYU/blob/main/PPT/AI04B_CSharp_Ora.jpg?raw=true" >
+      <h4>C#,OracleDB 프로젝트</h4>
+      <p>주제 : 백화점(VIP 고객,주차장,식당) 관리 프로그램 제작&연동</p>
+      <p>담당 : 주차관리 프로그램(UI,기능)</p>
+    </div></div>
+
+    <div class="col-sm-4">
+      <div class="portpolio" onclick="location='http://newruh.cafe24.com/board/board_view.jsp?idx=4'">
+      <img src="https://github.com/RYUGM/RYU/blob/main/PPT/Python_Project.jpg?raw=true" style="border: solid 1px black;">
+      <h4>Python 프로젝트</h4>
+      <p>주제 : 웹스크래핑 & 자동 메일 발송</p>
+      <p>담당 : 자동 메일 수신/발신 및 구독/해지 기능 구현</p>
+    </div>
+  </div>
+
+    <div class="col-sm-4">
+      <div class="portpolio" onclick="location='http://newruh.cafe24.com/board/board_view.jsp?idx=5'">
+      <img src="https://github.com/RYUGM/RYU/blob/main/PPT/lotto_project.jpg?raw=true">
+      <h4>C 언어 프로젝트</h4>
+      <p>주제 : 로또 번호 생성 및 당첨 확률 UP</p>
+      <p>담당 : PPT & 발표</p>
+    </div></div>
+
+    
+  </div>
+
+
+  <br><br>
+  <h2>개인 프로젝트</h2>
+  
+  <div class="row slideanim">
+
+    <div class="col-sm-4">
+      <div class="portpolio" onclick="location='http://newruh.cafe24.com/board/board_view.jsp?idx=11'">
+      <img src="https://github.com/RYUGM/RYU/blob/main/PPT/Project_Spring_Boot_%EB%A5%98%EA%B2%BD%EB%AC%B8.jpg?raw=true">
+      <h4>파이썬&스프링부트&가상머신&우분투&nbsp;  연계 프로젝트</h4>
+      <p>주제 : 파이썬 딥러닝 예측 결과를 스프링 부트에서 시각화 하기 & 직접 웹 호스팅 하기</p>
+      
+    </div></div>
+
+    
+    <div class="col-sm-4">
+      <div class="portpolio" onclick="location='http://newruh.cafe24.com/board/board_view.jsp?idx=9'">
+      <img src="https://github.com/RYUGM/RYU/blob/main/PPT/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A54%EC%B0%A8%EB%B0%98_%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5_%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EB%A5%98%EA%B2%BD%EB%AC%B8.jpg?raw=true">
+      <h4>파이썬 머신러닝&딥러닝</h4>
+      <p>주제 : 코로나 확진자 동향을 AI로 분석&예측 해 보기</p>
+    </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="portpolio" onclick="location='http://newruh.cafe24.com/board/board_view.jsp?idx=13'">
+      <img src="https://github.com/RYUGM/RYU/blob/main/PPT/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%B5%9C%EC%A0%80%EA%B0%80%EA%B2%80%EC%83%89_Lite-001.jpg?raw=true">
+      <h4>파이썬 자동 최저가 알림서비스 ver.Lite</h4>
+      <p>주제 : 앞서만든 최저가 알림서비스를 개인용 프로그램으로 변환</p>
+     
+    </div></div>
+
+    <div class="col-sm-4">
+      <div class="portpolio" onclick="location='http://newruh.cafe24.com/board/board_view.jsp?idx=12'">
+      <img src="https://github.com/RYUGM/RYU/blob/main/PPT/%ED%8C%8C%EC%9D%B4%EC%8D%AC_%EC%B5%9C%EC%A0%80%EA%B0%80-%EC%95%8C%EB%A6%BC-001.jpg?raw=true">
+      <h4>파이썬 자동 최저가 알림 서비스</h4>
+      <p>주제 : 고객이 원하는 상품,가격정보를 메일로 받아서 최저가 갱신시 메일로 알려주는 과정을 자동화</p>
+      
+    </div></div>
+
+    
+    <div class="col-sm-4">
+      <div class="portpolio" onclick="location='http://newruh.cafe24.com/'">
+      <img src="https://github.com/RYUGM/RYU/blob/main/PPT/bandicam%202022-03-21%2012-36-48-315.jpg?raw=true">
+      <h4>JSP 웹 호스팅</h4>
+      <p>주제 : 나만의 홈페이지를 만들어보기</p>
+      
+    </div></div>
+  
+    
+
+  </div>
+</div>
+
+
+  
+
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  
+  <div class="row">
+    <div class="col-sm-5">
+      
+      <p><span class="glyphicon glyphicon-map-marker"></span> 대구,달성군</p>
+      <p><span class="glyphicon glyphicon-phone"></span>0I0-93O4-I645</p>
+      <span class="glyphicon glyphicon-envelope"></span><a href="mailto:newruh@outlook.com">newruh@outlook.com</a>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <h2 class="text-center">CONTACT</h2>
+        <!-- <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div> -->
+        <!-- <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div> -->
+      </div>
+      <!-- <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br> -->
+      <!-- <div class="row"> -->
+        <!-- <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div> -->
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

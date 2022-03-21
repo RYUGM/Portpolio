@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d2d00d08-0b1b-4291-9509-f414b43b9b0a": {
+      "ProjectGuid": "d2d00d08-0b1b-4291-9509-f414b43b9b0a",
+      "DisplayName": "Project_payment",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,6 @@
+﻿  111.cpp
+C:\Users\RYU\Desktop\미니프로젝트 -로또-\미니프로젝트 -로또-\111.cpp(11,10): warning C4101: 'sum' :참조되지 않은 지역 변수입니다.
+C:\Users\RYU\Desktop\미니프로젝트 -로또-\미니프로젝트 -로또-\111.cpp(11,5): warning C4101: 'cnt' :참조되지 않은 지역 변수입니다.
+C:\Users\RYU\Desktop\미니프로젝트 -로또-\미니프로젝트 -로또-\111.cpp(9,7): warning C4101: 'p' :참조되지 않은 지역 변수입니다.
+C:\Users\RYU\Desktop\미니프로젝트 -로또-\미니프로젝트 -로또-\111.cpp(11,15): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  미니프로젝트 -로또-.vcxproj -> C:\Users\RYU\Desktop\미니프로젝트 -로또-\Debug\미니프로젝트 -로또-.exe

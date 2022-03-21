@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RYU_JSP">
+    <output-path>$PROJECT_DIR$/out/artifacts/RYU_JSP</output-path>
+    <root id="archive" name="RYU_JSP.war">
+      <element id="artifact" artifact-name="RYU_JSP:war exploded" />
+    </root>
+  </artifact>
+</component>

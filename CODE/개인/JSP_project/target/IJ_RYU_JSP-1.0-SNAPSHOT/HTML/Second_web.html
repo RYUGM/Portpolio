@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Monsieur+La+Doulaise&family=Oxanium:wght@800&display=swap');
+        #font1{font-family: 'Oxanium', cursive;}
+        
+        </style>
+   <!-- 폰트 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            
+            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Oxanium';
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+        }
+       
+    </style>
+
+<style>
+
+    .boxOffice{
+        width: 200px;
+        margin: 10px auto;
+        padding: 5px;
+        border: 3px solid #ffffff;
+        
+    }
+    .boxOfficeList2{
+        overflow: scroll;
+        -ms-overflow-style: none;
+    }
+    .boxOfficeList2::-webkit-scrollbar{
+        display: none;
+        width: 0 !important;
+
+    }
+    ul.boxOfficeList2{
+
+        width: 100%;
+        height: 420px;
+        
+        padding: 5px;
+        list-style-position: inside;
+        text-align: left;
+        list-style-type: none;
+
+    }
+    ul.boxOfficeList2 li.boxOfficeList1{
+        width: 85%;
+        height: 120px;
+        margin: 5px 0;
+        background-color: rgb(204, 147, 4);
+        padding: 5px 10px;
+        cursor:  pointer;
+    }
+    ul.boxOfficeList2 li:hover{
+        background-color: silver;
+    }
+
+</style>
+    
+    <!-- 기본 -->
+<style>
+    /* body{
+    background-image:url(A/BG.jpg);
+    
+    background-size: cover;
+    
+   
+} */
+/* .botton{
+    width 100px;
+    height: 70px;
+    background-color: orange;
+    color: aqua;
+    border: solid 10px snow;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px gray;
+}
+.botton>a{
+    display: block;
+    line-height: 70px;
+} */
+/* iframe{position: static;
+    top: 0px;
+        left: 25px;
+        right: 0px;
+        z-index: 1;
+}  */
+#Header1{
+    width: 1500px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Oxanium', cursive;
+    position: relative;
+    }
+    #Header{
+        width: 1500px;
+        margin: 0 auto;
+        height: 100px;
+        text-align: center;
+        font-family: 'Oxanium', cursive;
+        background-color: darkred;
+        color: black;
+        position: relative;
+        
+    }
+    #Header>h1{
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        right: 450px;
+    }
+    #Header1>h1{
+        position: absolute;
+        top: 30px;
+        left: 500px;
+        right: 0px;
+       
+    }
+    #WrapBody{
+        background-image:url('https://ryugm.github.io/RYUGM/1027/A/BG.jpg');
+    /* display: grid; */
+    background-size: contain;
+    
+        width: 1500px;
+        
+        margin: 0 auto;
+       
+
+    }
+    </style>
+<!-- Navi -->
+    <style>
+    #Header>#Navi {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            left: 0px;
+        }
+    #Navi>ul {
+            overflow: hidden;
+           
+        }
+
+        #Navi>ul>li {
+            float: left;
+            right: 0px;
+            top: 0px;
+            left: 0px;
+        }
+
+        #Navi>ul>li>a {
+            display: block;
+            padding: 20px 115px;
+            border: 2px solid goldenrod; 
+            
+            
+        }
+
+        #Navi>ul>li>a:hover {
+            background-color: rgb(158, 8, 245);
+            color: white;
+        }
+        /* #Navi>ul>li:first-child>a { */
+        #Navi>ul>li>a {
+            border-radius: 10px 10px 10px 10px;
+        }
+        /* #Navi>ul>li:last-child>a { */
+        /* #Navi>ul>li>a {
+            border-radius: 0px 10px 10px 0px;
+        } */
+        #Wrap1{width: 1500px;
+        height: 800px;
+        margin: 0 auto;}
+</style>
+<!-- Navi -->
+<style>
+    #content {
+        width: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #Lside{
+        width: 200px;
+            float: left;
+    }
+    #Rside{
+       
+      width: 310px;
+      
+      height: 800px;
+      overflow: hidden;
+
+      float: right;
+      color: black;
+      margin: 5px;
+      font-family: 'Oxanium', cursive;
+      
+     
+    
+    }
+    #Rside1{
+       
+       width: 310px;
+       
+       height: 800px;
+       overflow: hidden;
+ 
+       float: right;
+       color: black;
+       margin: 5px;
+       font-family: 'Oxanium', cursive;
+       
+      
+     
+     }
+/* #Rside>p{
+    font-family: 'Oxanium', cursive;
+} */
+    
+    #content>#Lside {
+            width: 200px;
+            float: left;
+           
+        }
+</style>
+<!-- buttons -->
+<style>
+    /* 첫번째 탭 */
+    input:nth-of-type(1) {
+        display: none;
+    }
+
+    input:nth-of-type(1)~div:nth-of-type(1) {
+        display: none;
+    }
+
+    input:nth-of-type(1):checked~div:nth-of-type(1) {
+        display: block;
+    }
+
+
+    /* 두번째 탭 */
+    input:nth-of-type(2) {
+        display: none;
+    }
+
+    input:nth-of-type(2)~div:nth-of-type(2) {
+        display: none;
+    }
+
+    input:nth-of-type(2):checked~div:nth-of-type(2) {
+        display: block;
+    }
+
+    /* 탭모양 */
+    section.buttons{overflow: hidden;}
+    section.buttons>label{
+        background-color: gray;
+        color: white;
+        display: block;
+        float: left;
+        width: 100px;
+
+        height: 30px;
+        line-height: 30px;
+
+        text-align: center;
+
+         box-sizing: border-box; 
+        border: 2px solid darkred; 
+    }
+    /* First */
+    input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1){
+/* background-color: green; */
+color: black;
+border: 5px solid goldenrod;
+    }
+    /* Second */
+    input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2){
+        /* background-color: green; */
+color: black;
+border: 5px solid goldenrod;
+    }
+
+</style>
+
+<style>
+.item{
+    overflow: hidden;
+    padding: 10px;
+    border: 2px solid darkred;
+    border-top: none;
+
+}
+.thumbnail{
+    float: left;
+    
+}
+.description{
+    float: left;
+    
+    
+}
+.description1{
+    float: inline-start;
+    
+    
+}
+.description1:hover{
+    background-color: cyan;
+}
+.description2:hover{
+    background-color: silver;
+    
+    
+}
+.description:hover{ background-color: gray; }
+.description>strong{
+    display: block;
+    width: 120px;
+
+}
+.description>strong+p{
+    width: 120px;
+}
+.description>strong,.description>strong+p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+</style>
+<!-- buttons -->
+
+<!-- checked -->
+<style>
+    input[type=checkbox]:checked+#divC{
+        height:0px;
+    }
+    #divC{
+        overflow: hidden; 
+        width: 1400px;
+        height: 200px;
+        transition-duration: 5s;
+        
+    }
+    #divC1{
+        overflow: scroll; 
+        width: 1400px;
+        height: 200px;
+        transition-duration: 5s;
+        
+    }
+    #divQ{
+        overflow: hidden; 
+        width: 200px;
+        height: 200px;
+        transition-duration: 5s;
+        
+    }
+    #oversc{
+        
+        overflow: scroll;
+    }
+    /* input{display: none;} */
+    
+    #Hv:hover{border: 5px solid snow; border-radius: 10px;}
+    #Hv1:hover{border: 5px solid darkred; border-radius: 5px; padding: 5px;}
+    #Hv2:hover{border: 5px solid silver; border-radius: 5px; padding: 5px;}
+</style>
+ <style>
+    #Footer{
+        width: 1500x;
+        margin: 0 auto;
+        margin-bottom: 5px;
+
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+        padding: 1px;
+
+        text-align: center;
+    }
+</style>
+<!-- foot -->
+
+<style>
+    .box1{width:400px; height: 80px;}
+    .red1 {background-color: silver; right: 765px; top: 10px; position: absolute;}
+    .box2{width:400px; height: 80px;}
+    .red2 {background-color: silver; right: 300px; top: 10px; position: absolute;}
+    /* .box1{width:400px; height: 850px;} */
+    .red3 {background-color: darkred; right: 300px; top: 18px;  position: absolute;
+       }
+    .box4{width:400px; height: 7px;  z-index: 1;}
+    .red4 {background-color: silver; right: 300px; top: 80px;  position: absolute;
+        }
+    .MK{z-index: 100;}
+</style>
+</head>
+<body>
+<div id = WrapBody>
+    <header id="Header">
+        <div class="box1 red1"></div>
+        <h1 class="MK" style="color: darkred;"><a href="#bottom1" class="MK" style="color: darkred;" id="Hv1" >Avengers</a> </h1>
+        <header id="Header1">
+        <div class="box1 red2"></div>
+        <h1 class="MK" style="color: silver;" class="MK"><a href="#bottom1" class="MK" style="color: silver;" id="Hv2">Assemble!</a></h1>
+    </header>
+        <div class="box1 red3"></div> 
+           <div class="box4 red4"></div> 
+           
+    
+    
+</header>
+
+<div style="margin: 20px;"></div>
+
+        <nav id="Navi">
+           
+        <ul>
+          
+            <li ><a href="#" style="color: silver;" id="font1" onclick="location.href='https://namu.wiki/w/%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4(%EC%98%81%ED%99%94)?from=%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A41'">Avergers(wiki)
+            
+            </a> 
+            </li>
+            
+            <li><a href="#" style="color: red;" id="font1" onclick="location.href='https://namu.wiki/w/%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4:%20%EC%97%90%EC%9D%B4%EC%A7%80%20%EC%98%A4%EB%B8%8C%20%EC%9A%B8%ED%8A%B8%EB%A1%A0'">Age Of Ultron(wiki)</a> </li>
+            
+            <li><a href="#"  style="color: goldenrod;" id="font1" onclick="location.href='https://namu.wiki/w/%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4:%20%EC%9D%B8%ED%94%BC%EB%8B%88%ED%8B%B0%20%EC%9B%8C'">Infiniti War(wiki)</a></li>
+            
+           <li><a href="#" style="color: silver;" id="font1" onclick="location.href='https://namu.wiki/w/%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4:%20%EC%97%94%EB%93%9C%EA%B2%8C%EC%9E%84'">End Game(wiki)</a></li>
+           
+        </ul>
+        
+        </nav>
+    
+        <div style="margin: 20px;"></div>       
+<!--  -->
+<center id="Wrap1">
+<div id="Lside">
+  
+        <div class="boxOffice">
+
+            <h2 class="boxOfficeType" style="background-color: darkred; color: silver;"></h2>
+            <p class="showRange" style="background-color: darkred; color: silver;" ></p>
+            <ul class="boxOfficeList1"></ul>
+        </div>
+    </div>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                const key="9a6dcd19e9bf9ba4790e06329858d008"
+                let date = (d=>new Date(d.setDate(d.getDate()-1)))(new Date)
+                
+                let year = date.getFullYear()
+                let month =date.getMonth()
+                let day =  date.getDate()
+                console.log(date.getFullYear())
+                console.log(date.getMonth())
+                console.log(date.getDate())
+                
+                if(Number(month)<9){
+                    month = '0'+(Number(month)+1)
+                    
+                }
+                else{
+                    month = Number(month)+1
+    
+                }
+                if(Number(day)<=9){
+                    day='0'+(Number(day))
+                }
+                console.log(''+month+day+year)
+                let targetDate=''+year+month+day
+                const apiUrl=  `http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${key}&targetDt=${targetDate}`
+               console.log(apiUrl)
+                const boxOfficeType=document.querySelector('.boxOfficeType')
+               const showRange=document.querySelector('.showRange')
+               const myUl = document.querySelector('.boxOfficeList1')
+               myUl.className='boxOfficeList2'
+               
+               fetch(apiUrl).then(function(response)
+               {
+                if(!response.ok)
+                    throw new Error("오류!")
+                    return response.json()
+                
+    
+               }).then(function(result){
+                   console.log(result)
+                   const jsonObj=result
+                   const boxOfficeResult = jsonObj['boxOfficeResult']
+                   boxOfficeType.textContent=boxOfficeResult['boxofficeType']
+                   showRange.textContent=boxOfficeResult['showRange']
+                  
+                   const movieList = boxOfficeResult['dailyBoxOfficeList']
+                   movieList.forEach(
+                       element =>{
+                           const myLi = document.createElement('li')
+                           myLi.className='boxOfficeList1'
+                           const myDiv=document.createElement('div')
+                           myDiv.className='boxdiv'
+                           const mh2 = document.createElement('h3')
+                           mh2.style.color='darkred'
+                           
+                           const mp1 = document.createElement('p')
+                           
+                           const mp2 = document.createElement('p')
+                           const mp3 = document.createElement('p')
+    
+                           mh2.textContent=element['movieNm']
+                           mp1.textContent='개봉일:'+element['openDt']
+                           mp2.textContent='누적관객수:'+element['audiAcc']
+                           mp3.textContent='순위변동'+element['rankInten']
+    
+                           myLi.appendChild(myDiv)
+                           myDiv.appendChild(mh2)
+                           myDiv.appendChild(mp1)
+                           myDiv.appendChild(mp2)
+                           myDiv.appendChild(mp3)
+                           myUl.appendChild(myLi)
+    
+                       }
+                   )
+                  
+               
+               }).catch(()=>{console.log("exception")})
+    
+            })
+           
+        </script>
+       
+
+
+
+<div id="Rside">
+    <input type="checkbox" id="sel3">   
+    <label for="sel3"><h1 ><img src="https://ryugm.github.io/RYUGM/1027/A/01A.jpg" alt="" width="300" height="550" id="Hv"></h1></label>
+    <div id="divC" style="background-color: snow;">
+        <h1 style="color: gray; text-align: left;" >End Game </h1>
+
+        <p style="color: black; text-align: left;">Ant-Man and<br></p> <p style="color: black; text-align: left;">the Wasp <br> -2019- <br></p>
+        <p style="color: black; text-align: left;">Captain Marvel<br>-2019-</p>
+        
+
+        </div>
+</div>
+
+<div id="Rside1">
+    <input type="checkbox" id="sel2">   
+    <label for="sel2"><h1><img src="https://ryugm.github.io/RYUGM/1027/A/03IF.jpg" alt="" width="300" height="550" id="Hv"></h1></label>
+    <div id="divC1" style="background-color: snow;">
+        <h1 style="color: goldenrod; text-align: left;">Infiniti War</h1>
+
+        
+        <p style="color: black; text-align: left; ">Ant-Man <br>-2015-</p>
+        <p style="color: black; text-align: left;">Captain America: <br> <p style="color: black; text-align: left;">Civil War <br> -2016-</p>
+        <p style="color: black; text-align: left;">Doctor Strange<br>-2016-</p>
+        <p style="color: black; text-align: left;">Guardians of the Galaxy Vol.2 <br> -2017-</p>
+        <p style="color: black; text-align: left;">Spider-Man:<br>Homecoming <br>-2017-</p>
+        <p style="color: black; text-align: left;">Thor: Ragnarok <br>-2017-</p>
+        <p style="color: black; text-align: left; background-color: snow;">Black Panther <br> -2018-</p>
+    
+    </div>
+</div>
+  
+
+  <div id="Rside1">
+    <input type="checkbox" id="sel1">   
+    <label for="sel1"><h1><img src="https://ryugm.github.io/RYUGM/1027/A/02AOU.jpg" alt="" width="300" height="550" id="Hv"></h1></label>
+    <div id="divC1" style="background-color: snow;">
+        <h1 style="color: rgba(216, 18, 18, 0.959); text-align: left;">Age Of Ultron</h1>
+
+  <p style="color: black; text-align: left;">Iron Man3 <br>-2013-</p>
+  <p style="color: black; text-align: left;">Thor:The Dark World <br>-2013-</p>
+  <p style="color: black; text-align: left;">Captain America:<br>The Winter Soldier<br>-2014-</p>
+  <p style="color: black; text-align: left;">Guardians of the Galaxy<br>-2014-</p>
+  
+</div>
+</div>
+
+  
+<div id="Rside1">
+<input type="checkbox" id="sel">
+<label for="sel"><h1><img src="https://ryugm.github.io/RYUGM/1027/A/01A.jpg" alt="" width="300" height="550" id="Hv"></h1></label>
+<div id="divC1" style="background-color: snow;">
+<h1 style="color: gray; text-align: left;">Avengers</h1>
+<p style="color: black; text-align: left;">Iron Man <br>-2008- </p>
+  <p style="color: black; text-align: left;">Iron Man2 <br>-2010-</p>
+  <p style="color: black; text-align: left;">Thor <br>-2011-</p>
+   <p style="color: black; text-align: left;">Captian America : <br> 
+   <p style="color: black; text-align: left;">The First Avenger <br>-2011-</p>   
+      
+  
+
+</div>
+</div>
+
+<!--  -->
+
+  <a href="#" id="Lside"  > 
+    
+    <input type="checkbox" id="sel_MK" >
+    <label for="sel_MK" > 
+        <ruby id="font1" >
+            <rt style="color: silver;" >QR-Code</rt>
+        <h1 style="color: darkred;" class="description2">MarvelKorea</h1>
+       </label>
+    </ruby>
+    <div id="divQ" >
+       <img src="https://ryugm.github.io/RYUGM/1027/A/qrcode_www.youtube.com.png" alt=""  width="180" height="180"  onclick="location='https://www.youtube.com/MarvelKorea'" class="MK">
+    
+       <p ><u id="font1" style="color: silver;" onclick="location='https://www.youtube.com/MarvelKorea'">Click!</u></p>
+      
+    </div>
+     <!-- <iframe width="180" height="180" src="https://www.youtube.com/embed/QdpxoFcdORI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
+
+</a>
+ 
+</center>
+
+ 
+
+<footer id="Footer">
+    
+    <input type="checkbox" id="sel_M" >
+    <label for="sel_M"><img src="https://ryugm.github.io/RYUGM/1027/A/ML.jpg" alt="" width="1450" height="300" id="Hv"></label>
+    <div id="divC">
+<h1 style="color: snow; text-align: left;" id="font1" class="font1">
+
+Created by RYU<br>
+2021 - 10 - 28 <br>
+ <p onclick="location='https://ryugm.github.io/RYUGM/My_Contect.html'">Contact here : <u>https://ryugm.github.io/RYUGM/My_Contect.html</u> </p>
+
+</h1>
+    </div>
+    
+   
+    <button style="background-color: black; border: 1px solid snow;"  ><a href="#" style="color: black;" id="font1"><u> <h1 class="description1">TOP</h1></a></u></button>
+    </footer>
+    <div id="bottom1" style="margin: 20px;"></div>
+
+   
+</body>
+</html>
