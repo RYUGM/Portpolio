@@ -14,11 +14,11 @@ namespace Project_payment
         //const string ORADB = "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
         //       "(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
         //       "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)));" +
-        //       "User Id=c##scott;Password=tiger;";
+        //       "User Id=;Password=;";
         const string ORADB = "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
               "(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
               "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)));" +
-              "User Id=c##RYU;Password=newruh;";
+              "User Id=;Password=;";
         public static OracleConnection OraConn = new OracleConnection(ORADB);
 
         public static List<ParkingCar> cars = new List<ParkingCar>();
