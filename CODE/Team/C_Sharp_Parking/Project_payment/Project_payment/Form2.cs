@@ -39,7 +39,7 @@ namespace Project_payment
             {
                 // this.dataGridView_Parking_Car_View.DataSource = DataManager.cars;
 
-                //뭔데 씨발 진짜 
+              
                 result_for_charge[0] = parkingCar;
                 dataGridView_Parking_Car_View.DataSource = result_for_charge;
                 //dataGridView_Parking_Car_View.Refresh();

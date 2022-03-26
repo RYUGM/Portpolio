@@ -37,14 +37,14 @@ class MainWindow(QMainWindow,form_class):
         self.add_btn.clicked.connect(self.input_link_price)#추가
 
 
-    def CreateEmail_xl(self):
+    def CreateEmail_xl(self): #엑셀 파일 생성 함수
         wb=Workbook()
         ws=wb.active
         ws.append(['Email','Subscribe',	'Item','CPrice','SPrice','RESULT','Name','HTML','Alter'])
         wb.save("Phase1.xlsx")
         wb.close()
 
-    def del_link(self):
+    def del_link(self):  #상품 삭제 함수
         now = datetime.datetime.now()
         print(now)
         wb = load_workbook("Phase1.xlsx")
@@ -59,7 +59,7 @@ class MainWindow(QMainWindow,form_class):
 
 
 
-    def input_link_price(self):
+    def input_link_price(self): #사용자로부터 상품 링크,이름,가격 정보를 입력받아 엑셀에 저장하는단계
         wb=load_workbook("Phase1.xlsx")
         ws=wb.active
         print("??")
@@ -126,7 +126,7 @@ class MainWindow(QMainWindow,form_class):
 
 
 
-    def threading_time(self):
+    def threading_time(self):  #엑셀 저장 데이터를 UI에 출력하는함수
         self.tableWidget.clearContents()
 
         rows = self.loadrow()
@@ -156,7 +156,7 @@ class MainWindow(QMainWindow,form_class):
 
 
 
-    def loadrow(self):
+    def loadrow(self): #UI에 엑셀 파일 데이터 출력을 위한 함수
         rows = []
         try:
             wb = load_workbook("Phase1.xlsx")
@@ -176,7 +176,7 @@ class MainWindow(QMainWindow,form_class):
 
 
 
-    def web_scraping(self):
+    def web_scraping(self): #웹 스크래핑 함수
         wb = load_workbook("Phase1.xlsx")
         ws = wb.active
 
@@ -204,6 +204,7 @@ class MainWindow(QMainWindow,form_class):
                 result = (int(price) - int(temp[3].value))
                 print("result=?", result)
                 ws.append([temp[0].value, temp[1].value, temp[2].value, temp[3].value, price, result, Myname])
+                # 등록한 상품 품절시 작동안하는 오류 발견, 개선 필요
                 # if sold_out is not None:
                 #     print(sold_out)
                 #     ws.append([temp[0].value, temp[1].value, temp[2].value, temp[3].value, '품절', '품절', Myname])

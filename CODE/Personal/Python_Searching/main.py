@@ -34,7 +34,7 @@ class MainWindow(QMainWindow,form_class):
         self.exit_btn.clicked.connect(QCoreApplication.instance().quit)
 
 
-    def CreateEmail_xl(self):
+    def CreateEmail_xl(self): #데이터 저장에 필요한 엑셀 파일 생성 함수
         wb=Workbook()
         ws=wb.active
         ws.append(["Email","Subscribe","Item","CPrice","SPrice","RESULT","Name","HTML","Alter"])
@@ -44,10 +44,10 @@ class MainWindow(QMainWindow,form_class):
         wb1=Workbook()
         ws1=wb1.active
         ws1.append(["Email","Subscribe","Item","CPrice","SPrice","RESULT","Name","HTML","Alter"])
-        wb1.save("Phase2.xlsx")
+        wb1.save("Phase2.xlsx") #Phase2는 이력 남기기용 (언제 어떤상품을 등록했고 얼마일때 구입했다 등의...)
         wb1.close()
-
-    def del_duplicate_addr1(self):
+     
+    def del_duplicate_addr1(self): #중복 고객 삭제 함수 
 
         del_same = pd.read_excel("Phase1.xlsx", sheet_name="Sheet")#중복 이메일
         df = del_same.drop_duplicates(["Email"], keep="last")
@@ -70,7 +70,7 @@ class MainWindow(QMainWindow,form_class):
         # print("최저가 알림후 삭제 완료")
         self.web_scraping()
 
-    def del_duplicate_addr2(self):
+    def del_duplicate_addr2(self): 
 
         del_same = pd.read_excel("Phase1.xlsx", sheet_name="Sheet")  # 중복 이메일
         df = del_same.drop_duplicates(["Email"], keep="last")
@@ -93,7 +93,10 @@ class MainWindow(QMainWindow,form_class):
         self.send_mail()
 
 
-    def del_duplicate_addr3(self):
+    def del_duplicate_addr3(self): #똑같은 중복 삭제 함수가 세개나 있는 이유는 
+        #이메일 체크 함수 -> 중복/해지 함수1 -> 웹스크래핑 -> 중복/해지 함수2 -> 
+        # 이메일 발송 함수(최저가 유무에따라) -> 중복/해지 함수3 -> 일정시간 대기하는 함수 -> 이메일 체크 
+        #순서로 반복하기때문에 같은 기능을 하더라고 하나의 중복/해지 함수로는 각 단계에 따른 함수를 호출하기 힘들었기 때문
 
         del_same = pd.read_excel("Phase1.xlsx", sheet_name="Sheet")  # 중복 이메일
         df = del_same.drop_duplicates(["Email"], keep="last")
@@ -115,7 +118,7 @@ class MainWindow(QMainWindow,form_class):
         # print("최저가 알림후 삭제 완료")
         self.threading_time()
 
-    def threading_time(self):
+    def threading_time(self): #웹 스크래핑 결과를 UI에 출력하고 일정시간 대기하는 함수
         wb=load_workbook("Phase1.xlsx")
         ws=wb.active
         list_view=[]
@@ -133,7 +136,7 @@ class MainWindow(QMainWindow,form_class):
 
         now = datetime.datetime.now()
         print("현재시간 ",now)
-        threading.Timer(1, self.recive_mail).start()
+        threading.Timer(120, self.recive_mail).start()
 
 
 
@@ -197,16 +200,6 @@ class MainWindow(QMainWindow,form_class):
         finally:
              time.sleep(5)
 
-             # list_view=[]
-             #
-             # for listv in ws.values:
-             #    list_view.append([listv[0],listv[3],listv[4],listv[5]])
-             # model = QStandardItemModel()
-             # for text in list_view:
-             #     print(text)
-             #     model.appendRow(QStandardItem(str(text).replace('[','').replace(']','')))
-             # self.listView.setModel(model)
-             # time.sleep(5)
 
         wb.save("Phase1.xlsx")
         wb.close()
@@ -229,11 +222,11 @@ class MainWindow(QMainWindow,form_class):
         ws1=wb1.active
         try:
             for temp in ws.iter_rows(min_row=2):
-                mail_check = temp[5].value
+                mail_check = temp[5].value #temp[5] 에는 (현재 가격 - 설정가격) 의 결과가 저장되어있음
                 print(temp[0].value, temp[1].value, temp[2].value, temp[3].value, temp[4].value, temp[5].value,
                       temp[6].value, temp[7].value, temp[8].value)
                 print("최저가 메일 보내기")
-                if (mail_check < 0):
+                if (mail_check < 0): #(현재 가격 - 설정가격) 이 0보다 작다는건 실제 판매가격이 고객이 설정한 가격보다 낮다는 뜻
                     ws.append([temp[0].value, 0, temp[2].value, temp[3].value, temp[4].value, temp[5].value,
                       temp[6].value, temp[7].value, temp[8].value])
                     ws1.append([temp[0].value,temp[1].value , temp[2].value, temp[3].value, temp[4].value, temp[5].value,
@@ -280,7 +273,7 @@ class MainWindow(QMainWindow,form_class):
         wb.close()
         self.del_duplicate_addr3()
 
-    def web_scraping(self):
+    def web_scraping(self): #웹 스크래핑 함수
         wb = load_workbook("Phase1.xlsx")
         ws = wb.active
 
