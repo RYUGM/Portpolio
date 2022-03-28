@@ -1,0 +1,727 @@
+<html>
+<head>
+    <base href="https://www.saramin.co.kr">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex,nofollow">
+	<title>이력서 보기</title>
+	<style type="text/css">
+		html {color:#000;background:#fff}
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,blockquote,button {margin:0;padding:0}
+		body {width:100%;min-width:1260px;font-size:13px;color:#444;font-family:"Malgun Gothic",dotum,gulim,sans-serif}
+		h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+		ol,ul,li {list-style:none}
+		address,caption,cite,code,dfn,em,strong,th,var{font-style:inherit;font-weight:inherit}
+		p {margin:0}
+		strong {font-weight:bold}
+		caption, legend, .hidden, .blind {overflow:hidden;position:absolute;top:0;left:-1000%;z-index:-1;width:1px;height:1px;font-size:0;line-height:0}
+		.wrap_letterview div, p, ul, td, input, a, span, em {font-style:normal;font-family:"Malgun Gothic",dotum,gulim,sans-serif}
+		.ico_point {padding:2px 4px 3px 4px;border:1px solid #a8a8a8;border-radius:20px;color:#666;font-size:12px;line-height:14px;text-align:center}
+		.section_profile {width:645px;letter-spacing:-1px}
+		.section_profile .area_title .title {margin-top:0;font-size:26px;color:#222;font-weight:bold;letter-spacing:-2px;line-height:28px;text-align:left;word-wrap:break-word;word-break:break-word}
+		.personal_info {table-layout:fixed;padding-top:42px;margin-top:12px;border-top:1px solid #888}
+		.personal_info:after {display:table;table-layout:fixed;clear:both;content:""}
+		.myname {padding-bottom:10px}
+		.myname em {display:inline-block;padding-right:15px;color:#444;font-size:22px;font-weight:bold;line-height:16px}
+		.myname .birthday {display:inline-block}
+		.myname .birthday span {display:inline-block;padding:0 8px}
+		.address_list td {font-size:12px;letter-spacing:0}
+		.address_list td p {margin-right:10px;padding-top:10px;word-wrap:break-word;word-break:break-all;-ms-word-wrap:break-word;-ms-word-break:break-all}
+		.keypoint_list table {padding:20px 0 10px;width:645px}
+		.keypoint_list .list_type1 {padding-left:20px}
+		.keypoint_list .list_type1 li {margin-bottom:3px;font-size:12px;line-height:14px}
+		.keypoint_list .list_type1 li p {font-size:12px;word-wrap:break-word;word-break:break-all;-ms-word-wrap:break-word;-ms-word-break:break-all}
+		.dashboard {width:645px}
+		.dashboard table {width:645px}
+		.dashboard .dashboard_list {width:643px;margin-bottom:20px;border-collapse:collapse;background:#fcfcfc}
+		.dashboard .dashboard_list th {padding: 10px 15px 0 15px;text-align: center;background:#fcfcfc;border:1px solid #eaeaea;font-size: 12px;white-space:nowrap}
+		.dashboard .dashboard_list th p {margin:0 10px 15px 11px;font-weight:bold}
+		.dashboard .dashboard_list td {padding: 10px 15px 20px 15px;vertical-align: middle;background: #fff;text-align: center;border: 1px solid #eaeaea}
+		.dashboard .dashboard_list td p {font-size: 12px;word-wrap: break-word;word-break: break-all;-ms-word-wrap: break-word;-ms-word-break: break-all}
+		.section_part .area_title {position:relative;margin-top:58px}
+		.section_part .area_title .title {margin:0;padding:0;color:#444;font-size:23px;font-weight:bold;line-height:23px;text-align:left;font-family:"Malgun Gothic",dotum,gulim,sans-serif}
+		.indetail {padding-left:18px;font-size:16px;font-weight:normal}
+		.indetail .bar {display:inline-block;position:relative;padding-left:11px;margin-left:11px}
+		.indetail .bar:after {position:absolute;left:0;top:5px;width:1px;height:10px;background:#cacaca;content:""}
+		.indetail span em {display:inline-block;margin:0 2px 0 3px;color:#fe6854;font-weight:bold}
+		.bar_txtline em {display:inline-block;color:#444;font-size:12px;line-height:20px}
+		.bar_txtline span {padding-left:12px;margin-left:12px;position:relative;color:#444;font-size:12px;line-height:15px}
+		.bar_txtline span:after {position:absolute;left:0;top:5px;width:1px;height:10px;background:#cacaca;content:""}
+		.portfolio_txtline {position:relative;margin-top:10px}
+		.portfolio_txtline:first-child {margin-top:0}
+		.portfolio_txtline span {font-size:12px}
+		.portfolio_txtline span.volume {display:inline-block;position:relative;padding-left:12px;margin-left:12px;color:#444;line-height:15px;vertical-align:bottom}
+		.portfolio_txtline span.volume:after {display:block;content:'';position:absolute;left:0;top:2px;width:1px;height:10px;background:#cacaca}
+		.section_part .part_table {margin-top:15px;border-top:2px solid #666;background-color:#fff}
+		.section_part .part_table a {color:#444}
+		.section_part .part_table .box_point {margin-bottom:10px}
+		.part_table .inpart_view {margin:0;padding:0;width:100%;border:0;border-left:1px solid #eaeaea;border-collapse:collapse;background-color:#fff}
+		.part_table .inpart_view th {padding:18px 0 20px 0;border:1px solid #eaeaea;white-space:nowrap;color:#444;font-size:12px;font-weight:bold;background:#f7f7f7}
+		.part_table .inpart_view td {padding:15px 14px 17px 14px;border:1px solid #eaeaea;padding-bottom: 20px;font-size: 12px;word-wrap: break-word;word-break: break-all;-ms-word-wrap: break-word;-ms-word-break: break-all;font-family:"Malgun Gothic",dotum,gulim,sans-serif}
+		.part_table .inpart_view td.lineup_center {padding-right:5px;padding-left:5px;text-align:center}
+		.part_table .inpart_view .intit {word-wrap: break-word;word-break:break-all;-ms-word-wrap:break-word;-ms-word-break:break-all}
+		.part_table .inpart_view .intxt {word-wrap: break-word;word-break:break-all;-ms-word-wrap:break-word;-ms-word-break:break-all}
+		.part_table .inpart_view td .ico_point {padding-top:0px;padding-left:7px;padding-right:7px;margin-right:15px}
+		.part_table .inpart_view td .bar_txtline {margin:0}
+		.part_table .inpart_view .project {display:inline-block;padding-top:14px;font-size:14px;line-height:20px;letter-spacing:-1px;vertical-align:top}
+		.part_table .inpart_view .project li {margin-top:-12px;padding-left:4px}
+		.part_table .inpart_view .project .tit {display:block;margin:0 0 0 -3px;font-weight:bold}
+		.part_table .inpart_view .project .tit:before {display:inline-block;margin:9px 7px 0 0;width:0;height:0;border:3px solid #444;border-radius:4px;vertical-align:top;content:""}
+		.part_table .inpart_view .project .desc {padding:0 0 24px 10px;border-left:1px dashed #c0c0c0}
+		.part_table .inpart_view .project .desc .date {display:block;padding:5px 0}
+		.part_table .inpart_view .project li:last-child .desc {border-color:#fff;padding-bottom:0}
+		.part_table .inpart_view .txt_detail {padding-top:10px}
+		.part_table .inpart_view th {border-top:0}
+		.part_table .inpart_view td.wrap_result {padding:30px}
+		.part_table .unit_result {overflow:hidden;position:relative;width:100%;border:0;box-sizing:border-box}
+		.part_table .unit_result th {padding:0;border:0;background:#fff}
+		.part_table .unit_result td {padding:0;border:0;text-align:center;background:#fff}
+		.part_table .unit_result .tit {color:#666;font-size:12px;font-weight:normal}
+		.part_table .unit_result .result {margin:0;padding:0;margin-top:5px;color:#444;font-size:21px}
+		.part_table .unit_result .result span {padding-left:3px;font-size:13px;line-height:18px}
+		.part_table .unit_result .row_color {color:#12a8f6}
+		.part_table .unit_result .middle_color {color:#4d87e8}
+		.part_table .unit_result .high_color {color:#5b6feb}
+		.part_table .unit_result .fst .result {font-weight:bold;letter-spacing:-2px}
+		.part_table .unit_result .fst .result span {font-size:21px}
+		.part_table .unit_result .type_num .result {margin-top:5px;font-weight:bold;font-size:23px}
+		.part_table .total_result {position:relative;border-top:0}
+		.part_table .total_result td {border:0}
+		.part_table .total_result .tit_result {border:0;padding:0 0 10px;color:#444;font-weight:bold;font-size:16px;text-align:left;letter-spacing:-2px;background:#fff}
+		.part_table .total_result .key_info {padding-top:13px;border:0;color:#888;font-size:12px;line-height:16px}
+		.part_table .total_result .key_info table {border-collapse:collapse;border-spacing:0;table-layout:fixed;letter-spacing:-1px}
+		.part_table .total_result .key_info table th {padding:7px 0 0;width:82px;border:0;color:#666;font-size:12px;font-weight:bold;text-align:left;vertical-align:top;background:#fff}
+		.part_table .total_result .key_info table th span:before {display:inline-block;margin:-2px 5px 0 0;border:1px solid #999;border-radius:50%;vertical-align:middle;content:""}
+		.part_table .total_result .key_info table td {padding:7px 0 0;border:0;color:#888}
+		.part_table .total_result .personality_detail {padding:16px 0 30px;border-bottom:1px solid #eaeaea;font-size:12px}
+		.part_table .total_result .aptitude_detail {margin:0 0 20px;padding:0;border:1px solid #eaeaea;border-top:1px solid #444}
+		.part_table .total_result .aptitude_detail table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;letter-spacing:-1px}
+		.part_table .total_result .aptitude_detail table th {padding:11px 0 13px;border:0;color:#888;font-size:12px;font-weight:normal;text-align:center;background:none}
+		.part_table .total_result .aptitude_detail table td {padding:20px 15px 23px;border-top:1px solid #eaeaea;box-sizing:border-box;color:#222}
+		.part_table .total_result .aptitude_detail table td strong {color:#222}
+		.part_table .total_result .aptitude_detail table td.tit {width:70px;font-weight:bold;text-align:center}
+		.part_table .total_result .aptitude_detail table td.rating {width:70px;padding-right:10px;padding-left:10px;font-size:22px;line-height:22px}
+		.part_table .total_result .aptitude_detail table td.per {width:70px;font-size:18px}
+		.part_table .total_result .aptitude_detail table td.text {color:#666;font-size:12px;text-align:left}
+		.my_letter_view .intit {padding-top:30px;font-weight:bold;color:#222}
+		.my_letter_view .intit:first-child {padding-top:0}
+		.my_letter_view .intxt {padding-top:5px}
+	</style>
+</head>
+<body style="text-align:center;">
+<div class="wrapper_narrow wrap_letterview">
+	<!-- 제목 -->
+<table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <tr>
+        <td>
+            <div class="section_profile">
+                <div class="area_title">
+                    <h3 class="title">SELECT RESUME FROM 류경문;</h3>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<!-- 기본정보 -->
+<table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="section_profile">
+                <div class="personal_info">
+                    <div class="my_data">
+                        <table style="width:645px;">
+                                                            <colgroup>
+                                    <col width="120px">
+                                    <col width="525px">
+                                </colgroup>
+                                                        <tbody>
+                            <tr>
+                                                                    <td>
+                                        <div style="width:100px"><img alt="" src="https://www.saramin.co.kr/zf_user/persons/picture?idx=15830419|fb295162fd667605f8478b9d72fad37c9b055a026c4f94b03b09d9c5e613b657" border="0" width="100" height="140" /></div>
+                                    </td>
+                                                                <td>
+                                    <p class="myname">
+                                        <em>류경문</em>
+                                        <span class="birthday">
+                                            <span>1988년 (35세/만 34세)</span> |
+                                            <span>남</span>
+                                        </span>
+                                    </p>
+                                    <table class="address_list" cellspacing="0" border="0" cellpadding="0" style="width:525px">
+                                        <tbody>
+                                        <tr>
+                                            <td><p>newruh@outlook.com</p></td>
+                                            <td><p>010-9304-1645 </p></td>
+                                            <td><p>010-9304-1645</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3"><p>(42974) 대구 달성군 옥포읍 돌미로 </p></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="dashboard">
+                <table class="dashboard_list" cellspacing="0" border="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th><p>학력사항</p></th>
+                        <th><p>경력사항</p></th>
+                        <th><p>희망연봉</p></th>
+                        <th><p>희망근무지/근무형태</p></th>
+                        <th><p>포트폴리오</p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <p class="txt">대학교(4년) 졸업</p>
+                        </td>
+                        <td>
+                            <p class="txt">신입 </p>
+                        </td>
+                        <td>
+                            <p class="txt">회사내규에 따름</p>
+                        </td>
+                        <td>
+                            <p class="txt">전국<br>정규직</p>
+                        </td>
+                        <td>
+                            <p class="txt portfolio_txt">총 3건</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table><table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="section_part">
+                <div class="area_title">
+                    <h3 class="title">학력<span class="indetail">최종학력<span class="bar">대학교<em>4년</em>졸업</span></span></h3>
+                </div>
+                                    <div class="part_table">
+                                                    <table class="inpart_view" cellspacing="0" cellpadding="0">
+                                <thead>
+                                <tr>
+                                    <th scope="col">재학기간</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">학교명(소재지)</th>
+                                    <th scope="col">전공</th>
+                                    <th scope="col">학점</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                                                    <tr>
+                                        <td class="lineup_center" rowspan="1">
+                                            2018.12 ~ 2020.02                                        </td>
+                                        <td class="lineup_center" rowspan="1">
+                                            졸업                                        </td>
+                                        <td>
+                                            국가평생교육진흥원대학교 (전국)                                        </td>
+                                        <td>
+                                            컴퓨터 공학                                                                                                                                                                            </td>
+                                        <td class="lineup_center">4.14 / 4.5</td>
+                                    </tr>
+                                                                                                                                        <tr>
+                                        <td class="lineup_center" rowspan="1">
+                                            2006.02 ~ 2018.11                                        </td>
+                                        <td class="lineup_center" rowspan="1">
+                                            중퇴                                        </td>
+                                        <td>
+                                            금오공과대학교 (경북)                                        </td>
+                                        <td>
+                                            컴퓨터 공학                                                                                                                                                                            </td>
+                                        <td class="lineup_center">2.08 / 4.5</td>
+                                    </tr>
+                                                                                                    </tbody>
+                            </table>
+                                            </div>
+                                                            </div>
+        </td>
+    </tr>
+    </tbody>
+</table><table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="section_part">
+                <div class="area_title">
+                    <h3 class="title">경력<span class="indetail">신입</span></h3>
+                                    </div>
+                <div class="part_table">
+                                    </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table><table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="section_part">
+                <div class="area_title">
+                    <h3 class="title">자격증/어학/수상내역</h3>
+                </div>
+                <div class="part_table">
+                    <table class="inpart_view" cellspacing="0" cellpadding="0">
+                        <thead>
+                        <tr>
+                            <th scope="col">취득일/수상일</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">자격/어학/수상명</th>
+                            <th scope="col">발행처/기관/언어</th>
+                            <th scope="col">합격/점수</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                                                                                <tr>
+                                <td class="lineup_center">2019.07 </td>
+                                <td>어학시험</td>
+                                <td>JLPT</td>
+                                <td>일본어</td>
+                                <td>1급/PASS</td>
+                            </tr>
+                                                                                <tr>
+                                <td class="lineup_center">2021.12 </td>
+                                <td>수상내역/공모전</td>
+                                <td>NCS 훈련 이수자 평가 경진대회 과정1위</td>
+                                <td>송암 직업능력 개발원</td>
+                                <td>-</td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table><table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="section_part">
+                <div class="area_title">
+                    <h3 class="title">보유기술</h3>
+                </div>
+                <div class="part_table">
+                    <table class="inpart_view" cellspacing="0" cellpadding="0" width="645">
+                        <thead>
+                            <th scope="col">보유기술명/수준/상세내용</th>
+                        </thead>
+                        <tbody>
+                                                                                <tr>
+                                <td>
+	                                <b>Java</b> / 중	                                		                                <p class="txt_detail">Java 문법을 사용해서 JSP , Spring 등의 프레임 워크로 웹페이지를 만들고 업체를 통해서(카페24) 1회, 직접(가상머신 리눅스 환경에서) 1회 호스팅 해 본 경험 보유</p>
+	                                                                </td>
+                            </tr>
+                                                                                <tr>
+                                <td>
+	                                <b>JSP</b> / 중	                                		                                <p class="txt_detail">JSP로 만든 웹 페이지를 카페24 톰캣 호스팅 서비스를 통해 호스팅 중</p>
+	                                                                </td>
+                            </tr>
+                                                                                <tr>
+                                <td>
+	                                <b>Spring</b> / 중	                                		                                <p class="txt_detail">Spring 프레임 워크로 만든 웹페이지를 가상머신-우분투를 통해 직접 호스팅 중</p>
+	                                                                </td>
+                            </tr>
+                                                                                <tr>
+                                <td>
+	                                <b>JavaScript</b> / 중	                                		                                <p class="txt_detail">JavaScript를 사용하여 화면을 동적으로 표현 할 수 있음(예: 슬라이드 효과 , 휠 이벤트 , 그래프 등)</p>
+	                                                                </td>
+                            </tr>
+                                                                                <tr>
+                                <td>
+	                                <b>C#</b> / 중	                                		                                <p class="txt_detail">주차 관리 프로그램 프로젝트에서 UI, DB와 연동해서 CRUD 기능 구현 가능</p>
+	                                                                </td>
+                            </tr>
+                                                                                <tr>
+                                <td>
+	                                <b>Oracle DB</b> / 중	                                		                                <p class="txt_detail">C# 주차 관리 프로그램 프로젝트를 통해 기본적인 CRUD 기능 사용과 경과한 시간에 따라 요금이 올라가고 정산 화면에서 누적 요금을 확인 하는 쿼리문을 작성 할 수 있을정도</p>
+	                                                                </td>
+                            </tr>
+                                                                                <tr>
+                                <td>
+	                                <b>MY-SQL</b> / 중	                                		                                <p class="txt_detail">JSP 웹 호스팅, Spring Boot 웹 호스팅 , Python 머신러닝&딥러닝 프로젝트 에서 DB로 사용, 기본적인 CRUD 기능을 다룰 줄 알고 직접 웹 호스팅을 하며 다양한 상황에서 발생하는 오류,문제를 경험 & 해결</p>
+	                                                                </td>
+                            </tr>
+                                                                                <tr>
+                                <td>
+	                                <b>Python</b> / 중	                                		                                <p class="txt_detail">업무 자동화  프로젝트(자동 메일 수신/발신, 구독/해지) 기능 담당 , 머신러닝&딥러닝 기초 지식과 LSTM , GRU 모델을 사용하여 코로나 확진자 예측 모델 만들기 프로젝트 수행</p>
+	                                                                </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table><table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="section_part">
+                <div class="area_title">
+                    <h3 class="title">취업우대사항</h3>
+                </div>
+                <div class="part_table">
+                    <table class="inpart_view" cellspacing="0" cellpadding="0">
+                        <tbody>
+                                                                            <tr>
+                                <th>고용지원금대상</th>
+                                <td colspan="3">
+                                    <p class="bar_txtline">
+                                        <em>대상</em><span>청년취업대상자(취업지원프로그램 이수)</span>                                    </p>
+                                </td>
+                            </tr>
+                                                                            <tr>
+                                <th>병역대상</th>
+                                <td colspan="3">
+                                    <p class="bar_txtline">
+                                        <em>군필</em><span> 2008.09 ~ 2009.04</span><span>육군</span><span>일병</span><span>기타</span>                                    </p>
+                                </td>
+                            </tr>
+                                                </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table><table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="section_part">
+                <div class="area_title">
+                    <h3 class="title">포트폴리오/기타문서</h3>
+                </div>
+                <div class="part_table">
+                    <table class="inpart_view" cellspacing="0" cellpadding="0">
+	                    <colgroup>
+		                    <col width="19%">
+		                    <col width="*">
+	                    </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">파일 구분</th>
+                            <th scope="col">파일명</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                                                                                    <tr>
+                                    <td class="lineup_center">포트폴리오</td>
+                                    <td>
+                                                                                    <div class="portfolio_txtline">
+                                                <a href="http://newruh.cafe24.com/" class="portfolio ico_pdf05" target="_blank"><span>http://newruh.cafe24.com/</span></a>                                                                                                    <div class="keypoint_list">
+                                                        <ul class="list_type1">
+                                                                                                                                                                                            <li><p>작업기간 : 2021-09-15&nbsp;~&nbsp;2022-04-14&nbsp;(7개월)</p></li>
+                                                                                                                                                                                            <li><p>작업 인원 : 1</p></li>
+                                                                                                                                                                                            <li><p>작업 툴 : intellij,visual studio code,Mysql,Virtualbox,Ubuntu</p></li>
+                                                                                                                                                                                            <li><p>작품소개 : 경북산업직업전문학교 교육 과정 중 팀프로젝트,개인 프로젝트 등을 포트폴리오로 정리하기 위해 만든 개입 홈페이지 입니다. 
+기본적으로 JSP로 개발했고 카페24 톰캣 호스팅 서비스로 배포중이며, 
+일부 스프링 부트로 개발해서 리눅스 환경의 가상머신 서버를 통해 직접 배포하는 페이지도 있습니다.</p></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </div>
+                                                                                    <div class="portfolio_txtline">
+                                                <a href="http://newruh.cafe24.com/Portfolio.html" class="portfolio ico_pdf05" target="_blank"><span>http://newruh.cafe24.com/Portfolio.html</span></a>                                                                                                    <div class="keypoint_list">
+                                                        <ul class="list_type1">
+                                                                                                                                                                                            <li><p>작업기간 : 2022-03-15&nbsp;~&nbsp;2022-03-24&nbsp;(10일)</p></li>
+                                                                                                                                                                                            <li><p>작업 인원 : 1</p></li>
+                                                                                                                                                                                            <li><p>작업 툴 : Visual Studio Code</p></li>
+                                                                                                                                                                                            <li><p>작품소개 : 부트 스트랩을 사용하여 포트폴리오를 꾸며 보았습니다.</p></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </div>
+                                                                                    <div class="portfolio_txtline">
+                                                <a href="http://gm-ryu.shop/" class="portfolio ico_pdf05" target="_blank"><span>http://gm-ryu.shop/</span></a>                                                                                                    <div class="keypoint_list">
+                                                        <ul class="list_type1">
+                                                                                                                                                                                            <li><p>작업기간 : 2022-02-01&nbsp;~&nbsp;2022-03-04&nbsp;(1개월 4일)</p></li>
+                                                                                                                                                                                            <li><p>작업 인원 : 1</p></li>
+                                                                                                                                                                                            <li><p>작업 툴 : Python , Spring boot , MySql , Visual Studio Code , Ubuntu</p></li>
+                                                                                                                                                                                            <li><p>작품소개 : 공공데이터 포털 API 정보를 기반으로 파이썬 으로 코로나 예측 딥러닝 모델을 구축하여 얻어낸 예측 값을 Spring boot 로 개발한 페이지에서 그래프 형식으로 시각화 하여 출력하고, 버츄얼 박스 - 우분투를 사용해서 직접 호스팅 한 프로젝트 </p></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </div>
+                                                                            </td>
+                                </tr>
+                                                                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table><table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+    <colgroup>
+        <col width="100%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td>
+            <div class="section_part">
+                <div class="area_title">
+                    <h3 class="title">자기소개서</h3>
+                </div>
+                <div class="part_table">
+                    <table class="inpart_view" cellspacing="0" cellpadding="0">
+                        <tbody>
+                        <tr>
+                            <td class="my_letter_view">
+                                                                                                        <p class="intit">[믿음과 확신의 근거]</p>
+                                    <div class="intxt">Before…<br />
+저는 대학교 첫 C언어 수업을 잊을 수가 없습니다. 너무나 이해하기 어렵고 난해한 수업내용에 좌절해 버렸고 이후의 전공 수업 또한 내용을 따라가기 어려워서 결국 중퇴를 결과를 선택하고 학사 학위를 따기 위한 부족한 한점은 학점은행제를 통해 취득해서 컴퓨터 공학사 학위는 획득하였지만 “코딩 못하는 컴공” 타이틀은 벗어날 수 없었습니다. 그렇게 코딩과는 상관없는 삶을 살던 중, 2021년 초에 코딩과는 전혀 상관없는 어떤 일을 계기로 깨닫게 되었습니다. 제가 머리가 나빠서 코딩을 못 한 게 아니라 도중에 포기해서 못 한 것이라는 걸. 만약 포기하지 않고 공부했다면, 분명 한 사람의 프로그래머로서 활동할 수 있었다는 강한 확신을 얻고, 깊은 후회와 반성과 앞으로의 일에 고민하기 시작했습니다.<br />
+<br />
+After that…<br />
+고민 끝에 아직 늦지 않았다고 판단한 저는 한때 포기했던 코딩 공부를 다시 하기 위해 취업 성공 패키지를 통한 국비교육 신청을 했 습니다. 학교를 고르는 데 있어서 고민이 많았지만 경북산업 직업 전문학교에서의 입학 상담 과정에서 큰 감명을 받아 6개월 교육 과정을 진행했고, 후회가 깊은 만큼 필사적으로 수업에 임했습니다. 수업 내용은 여전히 어려웠지만 대학 시절과는 다르게 할 수 있다 는 확신이 있었고, 대학 시절 수업에서 배운 이론적인 부분의 기억이 큰 도움이 되었습니다.<br />
+<br />
+Now.<br />
+결과, 경북산업 직업 전문학교에서 수행한 팀 프로젝트 3회, 개인프로젝트 2회, 수업 과정과는 상관없이 만들어본 토이 프로젝트 3회, 수상 1회 등…되돌아보면 지난 6개월 동안 대학 시절의 저라면, 꿈도 못 꿀 성과를 이루어 냈습니다. 그리고 이제 확신을 현실로 바꾸기 위한 최종과제인 취업의 문을 두드려 보려 합니다. 저는 어학연수, 워킹 홀리데이 등에서 다양한 국적, 나이대의 사람들과 생활하면서 원만한 인간관계를 형성하는 방법을 배웠으며, 프로젝트를 할 때 팀원들의 의견을 귀담아들으며 타협할 줄 아는 유연성 있는 사고를 지녔고, 할 수 있다는 강한 자신감과 믿음을 가지고 있는 개발 의욕 충만한 신입 개발자 류경문입니다.<br />
+</div>
+                                                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>    <table width="645" border="0" cellspacing="0" cellpadding="0" style="width:645px;">
+        <colgroup>
+            <col width="100%">
+        </colgroup>
+        <tbody>
+        <tr>
+            <td>
+	            <div class="section_part">
+		            <div class="area_title">
+			            <h3 class="title">사람인 인・적성검사</h3>
+		            </div>
+                    <div class="part_table">
+                                                    	                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="inpart_view">
+		                        <thead>
+			                        <tr>
+				                        <th scope='col'>인성검사(응시일 2022-03-24)</th>
+			                        </tr>
+		                        </thead>
+                                                                <tbody>
+			                        <tr>
+				                        <td class="wrap_result personality">
+					                        <table border="0" cellspacing="0" cellpadding="0" class="unit_result">
+						                        <colgroup>
+							                        <col width="52%">
+							                        <col width="16%">
+							                        <col width="16%">
+							                        <col width="16%">
+						                        </colgroup>
+						                        <tbody>
+                                                    <tr>
+							                        <td class="fst">
+								                        <div class="tit">직무적합</div>
+								                        <div class="result">IT·인터넷 : <span class="high_color">보통</span></div>
+							                        </td>
+							                        <td class="type_num">
+								                        <div class="tit">표준점수</div>
+								                        <div class="result">64<span>점</span></div>
+							                        </td>
+							                        <td class="type_num">
+								                        <div class="tit">점수</div>
+								                        <div class="result">85<span>%</span></div>
+							                        </td>
+							                        <td>
+								                        <div class="tit">응답신뢰도</div>
+								                        <div class="result">높음</div>
+							                        </td>
+						                        </tr>
+						                        </tbody>
+					                        </table>
+				                        </td>
+			                        </tr>
+			                        <tr>
+				                        <td class="wrap_result">
+					                        <table border="0" cellspacing="0" cellpadding="0" class="total_result">
+					                        <tbody>
+						                        <tr>
+							                        <th class="tit_result">종합 결과</th>
+						                        </tr>
+						                        <tr>
+							                        <td class="personality_detail"> IT·인터넷직에서는 작은 것도 놓치지 않는 세밀함, 논리적이고 체계적인 사고력 및 업무적으로 타인에게 신뢰감을 심어줄 수 있는 자세, 주도적인 태도로 새롭거나 대안적인 방안을 제시하려는 자세가 요구됩니다.<br />
+<br />
+류경문님은 해당 직무에 대한 적합도가 높아 주어진 직무 상황에 잘 적응하며, 역량을 발휘할 가능성이 높습니다.</td>
+						                        </tr>
+						                        <tr>
+							                        <td class="key_info">
+								                        <table border="0" cellspacing="0" cellpadding="0">
+									                        <tbody>
+									                        <tr>
+										                        <th><span>표준점수</span></th>
+										                        <td>인성검사 응시자 집단에서 나의 상대적인 위치를 나타내기 위해 산출하는 점수.</td>
+									                        </tr>
+									                        <tr>
+										                        <th><span>백분위</span></th>
+										                        <td>응시자 보다 낮은 점수를 받은 사람을 백분율로 표기.<br>
+											                        예) 점수가 95%라면 응시자 점수보다 낮은 사람이 95% 있다는 것을 의미.</td>
+									                        </tr>
+									                        <tr>
+										                        <th><span>응답신뢰도</span></th>
+										                        <td>일관적인 답변을 하지 않았거나 실제 자신의 성향보다 더 긍정적인 방향으로 응답하면 신뢰도가 낮아질 수 있음.</td>
+									                        </tr>
+									                        </tbody>
+								                        </table>
+							                        </td>
+						                        </tr>
+					                        </tbody>
+					                        </table>
+				                        </td>
+			                        </tr>
+		                        </tbody>
+                                
+	                        </table>
+                        
+                                                    
+	                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="inpart_view">
+		                        <thead>
+		                        <tr>
+			                        <th scope="col">적성검사(응시일 2022-03-24)</th>
+		                        </tr>
+		                        </thead>
+                                		                        <tbody>
+		                        <tr>
+			                        <td class="wrap_result">
+				                        <table border="0" cellspacing="0" cellpadding="0" class="total_result">
+					                        <tbody>
+					                        <tr>
+						                        <th class="tit_result">적성별 상세설명</th>
+					                        </tr>
+					                        <tr>
+						                        <td class="aptitude_detail">
+						                            <table border="0" cellspacing="0" cellpadding="0">
+								                        <thead>
+								                        <tr>
+									                        <th scope="col">적성</th>
+									                        <th scope="col">등급</th>
+									                        <th scope="col">백분위</th>
+									                        <th scope="col">해석</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        									                        <tr>
+										                        <td class="tit">수리</td>
+										                        <td class="rating">
+											                        										                        </td>
+										                        <td class="per">82%</td>
+										                        <td class="text">
+											                        												                        <strong>류경문님이 가장 잘하는 것은 수리입니다.</strong>
+											                        											                        <p>수 체계/수학에 대한 이해를 바탕으로 일상적 수리 문제를 쉽게 해결할 수 있는 능력말이나 글로 된 문제 상황을 보다 간단한 수학적 기호(사칙연산 기호, 등호, 부등호 등)로 전환한 뒤 해결해내는 능력</p>
+										                        </td>
+									                        </tr>
+									                        									                        <tr>
+										                        <td class="tit">공간</td>
+										                        <td class="rating">
+											                        										                        </td>
+										                        <td class="per">79%</td>
+										                        <td class="text">
+											                        											                        <p>정보를 머릿속으로 떠올리고, 부분을 통합하여 전체를 파악할 수 있는 능력물체를 마음속으로 회전시키거나 조합할 수 있고, 방향을 바꾸더라도 동일한 도형을 찾아낼 수 있는 능력</p>
+										                        </td>
+									                        </tr>
+									                        									                        <tr>
+										                        <td class="tit">언어</td>
+										                        <td class="rating">
+											                        										                        </td>
+										                        <td class="per">55%</td>
+										                        <td class="text">
+											                        											                        <p>단어와 문장의 의미를 정확히 이해하고, 적절한 어휘를 사용하여 대화하거나 글을 쓸 수 있는 능력글에서 제시된 사실적 또는 맥락적 정보와 개념의 핵심 내용을 파악하고, 요약하여 제시할 수 있는 능력</p>
+										                        </td>
+									                        </tr>
+									                        									                        <tr>
+										                        <td class="tit">추리</td>
+										                        <td class="rating">
+											                        										                        </td>
+										                        <td class="per">24%</td>
+										                        <td class="text">
+											                        											                        <p>복잡한 상황과 전제를 정확히 파악하고, 비판적 사고와 추론 과정을 통해 주장의 진위 여부 혹은 오류를 판단할 수 있는 능력주어진 사실들을 조합하여 새로운 가설을 만들고, 스스로 검증할 수 있는 능력</p>
+										                        </td>
+									                        </tr>
+									                        								                        </tbody>
+							                        </table>
+						                        </td>
+					                        </tr>
+					                        <tr>
+						                        <td class="key_info">
+							                        <table border="0" cellspacing="0" cellpadding="0">
+								                        <tbody>
+								                        <tr>
+									                        <th><span>백분위</span></th>
+									                        <td>나보다 낮은 점수를 받은 사람을 백분율로 표기<br>
+										                        예) 점수가 95%라면 내 점수보다 낮은 사람이 95% 있다는 것을 의미</td>
+								                        </tr>
+								                        <tr>
+									                        <th><span>등급</span></th>
+									                        <td>★★★ : 해당 영역의 능력이 뛰어납니다<br>
+										                        ★★ : 다른 응시자와 유사하거나 비교적 우수합니다<br>
+										                        ★ : 조금 더 노력이 필요한 영역입니다</td>
+								                        </tr>
+								                        </tbody>
+							                        </table>
+						                        </td>
+					                        </tr>
+					                        </tbody>
+				                        </table>
+			                        </td>
+		                        </tr>
+		                        </tbody>
+                                            
+	                        </table>
+                                            </div>
+	            </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
