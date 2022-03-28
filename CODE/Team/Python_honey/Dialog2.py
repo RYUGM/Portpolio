@@ -48,10 +48,10 @@ class Dialog2(QDialog):
             res = requests.get(url, headers=headers)
             res.raise_for_status()
             soup = BeautifulSoup(res.text, "lxml")
-            # print(res.text)
+
 
             items = soup.find_all("li", attrs={"class": re.compile("^search-product")})
-            # price = soup.find_all("li", attrs={"class":re.compile("^search-product")})
+
 
             # 상품 불러오기
             i = 0

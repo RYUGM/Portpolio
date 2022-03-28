@@ -48,7 +48,7 @@ int Plotto(int lotto[6], int save, int num)
 	
 	}
 
-	for (int i = 0; i <= 5; i++) {//오름차 순 배열
+	for (int i = 0; i <= 5; i++) {//오름차순 배열
 		for (int j = 0; j <= 4; j++) {
 			if (lotto[j] > lotto[j + 1]) {
 				save = lotto[j];

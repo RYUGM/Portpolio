@@ -102,7 +102,7 @@ class Customer_Email:
                         with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
                             smtp.ehlo()
                             smtp.starttls()
-                            # smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+
                             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
                             smtp.send_message(msg)
@@ -162,7 +162,7 @@ class Customer_Email:
                 #body 안에 HTML 작성가능(img_tag에는 웹스크래핑으로 얻은 html 태그가 담겨져있음)
 
                 body = (body.replace('[', ''))
-                #.replace(',','')
+
                 text = MIMEText(body, 'html', 'utf-8')
                 msg.attach(text)
 

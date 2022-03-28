@@ -1,3 +1,3 @@
 DB 테이블은 기본적으로 동준쌤이랑 만든것과 동일한데 추가로
 
-result(varchar2(50)) , result1(varchar2(50)) 를 넣어주셔야 사용할수있습니다.
+result(varchar2(50)) , result1(varchar2(50)) 를 넣어주셔야 사용할수있습니다!
